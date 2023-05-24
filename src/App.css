@@ -4,7 +4,80 @@
     box-sizing: border-box;
 }
 
-.App-header {
-    height: 100vh;
+.app-wrapper {
     background-size: cover;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.weather {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-container .city-info {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.app-container .tabs {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+}
+
+.app-container .tabs li {
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tabs-info .image {
+    width: 140px;
+    object-fit: cover;
+}
+
+.tabs-info {
+    display: flex;
+    gap: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.tabs-info .box-container p {
+    margin-bottom: 1rem;
+}
+
+.box-container {
+    padding: 1rem;
+}
+
+.tabs-info .box-container .heading {
+    font-weight: bold;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.weather p {
+    margin-left: 0.5rem;
+    font-size: 1rem;
 }
