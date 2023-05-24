@@ -43,7 +43,7 @@ function App() {
 
   return (
      <main className="app-wrapper" style={{backgroundImage: `url(${searchResults?.backgroundUrl})`}}>
-      <div className='weather'>
+      <div id='weather-data' className='weather'>
         <img src={searchResults?.weather.icon} width={40} />
         <p>{searchResults?.weather.temp}</p>
         <p>{searchResults?.weather.main}</p>
